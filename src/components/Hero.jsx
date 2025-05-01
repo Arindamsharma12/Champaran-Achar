@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div
-      className="relative w-full font-cooper h-164 bg-cover bg-center"
+      className="relative w-full font-cooper h-218 bg-cover bg-center"
       style={{ backgroundImage: "url('/herobanner1.png')" }} // <-- Make sure to place the image in /public folder
       >
       {/* Overlay */}
