@@ -1,27 +1,22 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-
 import Hero from '../components/Hero'
 import InfiniteSlider from '../components/InfiniteSlider'
-import MostLoved from '../components/MostLoved'
-import ShopRange from '../components/ShopRange'
-import ProductsShowcase from '../components/ProductShowcase'
-import Footer from '../components/Footer'
+import ProductListing from '../components/ProductListing'
 import SocialMedia from '../components/SocialMedia'
+import Footer from '../components/Footer'
 
-const Home = () => {
+const AllProducts = () => {
   return (
     <>
     <Navbar/>
     <Hero/>
     <InfiniteSlider/>
-    <MostLoved/>
-    <ShopRange/>
-    <ProductsShowcase/>
+    <ProductListing/>
     <SocialMedia/>
     <Footer/>
     </>
   )
 }
 
-export default Home
+export default AllProducts
