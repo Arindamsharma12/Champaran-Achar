@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProductListing = () => {
   // Filter states
@@ -6,7 +7,7 @@ const ProductListing = () => {
   const [ingredientsFilter, setIngredientsFilter] = useState('');
   const [oilContentFilter, setOilContentFilter] = useState('');
   const [onionGarlicFilter, setOnionGarlicFilter] = useState('');
-  
+  const navigate = useNavigate();
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
@@ -29,6 +30,10 @@ const ProductListing = () => {
   
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   
+  const handleClick = ()=>{
+    navigate("/product")
+  }
+
   return (
     <div className="bg-amber-50 font-montserrat min-h-screen py-8 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
@@ -94,7 +99,7 @@ const ProductListing = () => {
         {/* Product Grid */}
         <div className="grid grid-cols-3 gap-8">
           {currentProducts.map(product => (
-            <div key={product.id} className="bg-white p-6 rounded-md flex flex-col items-center">
+            <div key={product.id} onClick={handleClick} className="bg-white p-6 rounded-md flex flex-col items-center">
               <img 
                 src={product.image} 
                 alt={product.name} 

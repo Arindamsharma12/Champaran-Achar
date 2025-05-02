@@ -1,3 +1,4 @@
+import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import About from './pages/About'
 import AllProducts from './pages/AllProducts'
@@ -7,10 +8,15 @@ import Product from './pages/Product'
 function App() {
 
   return (
-    // <Home/>
-    // <AllProducts/>
-      // <Product/>
-      <About />
+    <>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/all-products' element={<AllProducts/>}/>
+      <Route path='/Product' element={<Product/>}/>
+      <Route path='/About' element={<About/>}/>
+
+    </Routes>
+    </>
   )
 }
 
