@@ -28,7 +28,7 @@ export default function WaahWebsite() {
                   </div>
                 )}
               </div>
-              <a href="#" className="font-semibold text-gray-800 hover:text-orange-500 transition">ABOUT US</a>
+              <a href="/about" className="font-semibold text-gray-800 hover:text-orange-500 transition">ABOUT US</a>
               <a href="#" className="font-semibold text-gray-800 hover:text-orange-500 transition">CONTACT US</a>
             </div>
             

@@ -6,7 +6,7 @@ const Navbar = ()=>{
               {/* Left Nav Items */}
               <div className="flex items-center space-x-8 text-black font-medium">
                 <a href="#" className="hover:text-orange-600">SHOP <span className="text-xs">▼</span></a>
-                <a href="#" className="hover:text-orange-600">ABOUT US</a>
+                <a href="/about" className="hover:text-orange-600">ABOUT US</a>
                 <a href="#" className="hover:text-orange-600">CONTACT US</a>
               </div>
         

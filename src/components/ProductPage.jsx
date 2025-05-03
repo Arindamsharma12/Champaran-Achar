@@ -21,7 +21,7 @@ const ProductPage = () => {
       <header className="flex items-center justify-between px-8 py-4">
         <div className="flex items-center space-x-8">
           <a href="#" className="text-sm font-semibold text-gray-700 hover:text-orange-600">Shop</a>
-          <a href="#" className="text-sm font-semibold text-gray-700 hover:text-orange-600">About Us</a>
+          <a href="/about" className="text-sm font-semibold text-gray-700 hover:text-orange-600">About Us</a>
           <a href="#" className="text-sm font-semibold text-gray-700 hover:text-orange-600">Contact Us</a>
         </div>
         <div className="flex-1 flex justify-center">
